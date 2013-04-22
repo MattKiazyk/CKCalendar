@@ -241,6 +241,7 @@
         dayOfWeekLabel.backgroundColor = [UIColor clearColor];
         dayOfWeekLabel.shadowColor = [UIColor whiteColor];
         dayOfWeekLabel.shadowOffset = CGSizeMake(0, 1);
+        [dayOfWeekLabel setFont:self.dayOfWeekFont];
         [labels addObject:dayOfWeekLabel];
         [self.calendarContainer addSubview:dayOfWeekLabel];
     }

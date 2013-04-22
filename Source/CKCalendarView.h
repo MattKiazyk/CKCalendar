@@ -58,7 +58,7 @@ typedef enum {
 @property(nonatomic, strong) UIButton *prevButton;
 @property(nonatomic, strong) UIButton *nextButton;
 @property(nonatomic, assign) CGFloat buttonMargin;
-
+@property (nonatomic, strong) UIFont *dayOfWeekFont;
 
 
 - (void)setMonthButtonColor:(UIColor *)color;

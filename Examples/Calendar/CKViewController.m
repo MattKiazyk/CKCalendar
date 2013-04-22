@@ -20,12 +20,14 @@
     self = [super init];
     if (self) {
         dateImage = [UIImage imageNamed:@"MCPh2_DateBox"];
+        
         CKCalendarView *calendar = [[CKCalendarView alloc] initWithStartDay:startSunday];
         self.calendar = calendar;
         calendar.delegate = self;
         //calendar.dateFont = [UIFont fontWithName:@"Helvetica" size:12];
         calendar.dateBorderColor = [UIColor darkGrayColor];
         calendar.buttonMargin = 100;
+        calendar.dayOfWeekFont = [UIFont fontWithName:@"Helvetica" size:10];
         
         [calendar setLeftMonthButtonImage:[UIImage imageNamed:@"MCPh2_CalendarLeftArrow"]];
         [calendar setRightMonthButtonImage:[UIImage imageNamed:@"MCPh2_CalendarRightArrow"]];
