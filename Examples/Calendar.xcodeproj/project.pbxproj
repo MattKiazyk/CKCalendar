@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0036DD3F172300E00022B3ED /* MCPh2_DateBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 0036DD3D172300E00022B3ED /* MCPh2_DateBox.png */; };
+		0036DD40172300E00022B3ED /* MCPh2_DateBox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0036DD3E172300E00022B3ED /* MCPh2_DateBox@2x.png */; };
+		0036DD4317230C390022B3ED /* calendarHeader.png in Resources */ = {isa = PBXBuildFile; fileRef = 0036DD4117230C390022B3ED /* calendarHeader.png */; };
+		0036DD4417230C390022B3ED /* calendarHeader@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0036DD4217230C390022B3ED /* calendarHeader@2x.png */; };
+		0036DD49172585420022B3ED /* MCPh2_CalendarLeftArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 0036DD45172585420022B3ED /* MCPh2_CalendarLeftArrow.png */; };
+		0036DD4A172585420022B3ED /* MCPh2_CalendarLeftArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0036DD46172585420022B3ED /* MCPh2_CalendarLeftArrow@2x.png */; };
+		0036DD4B172585420022B3ED /* MCPh2_CalendarRightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 0036DD47172585420022B3ED /* MCPh2_CalendarRightArrow.png */; };
+		0036DD4C172585420022B3ED /* MCPh2_CalendarRightArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0036DD48172585420022B3ED /* MCPh2_CalendarRightArrow@2x.png */; };
 		1D2391395A8710F3E85A55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2391395A8710F3E85A54 /* UIKit.framework */; };
 		1D2391395A8710F3E85A57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2391395A8710F3E85A56 /* Foundation.framework */; };
 		1D2391395A8710F3E85A5F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D2391395A8710F3E85A5E /* InfoPlist.strings */; };
@@ -23,6 +31,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0036DD3D172300E00022B3ED /* MCPh2_DateBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MCPh2_DateBox.png; path = ../../MCPh2_DateBox.png; sourceTree = "<group>"; };
+		0036DD3E172300E00022B3ED /* MCPh2_DateBox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MCPh2_DateBox@2x.png"; path = "../../MCPh2_DateBox@2x.png"; sourceTree = "<group>"; };
+		0036DD4117230C390022B3ED /* calendarHeader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calendarHeader.png; path = ../../calendarHeader.png; sourceTree = "<group>"; };
+		0036DD4217230C390022B3ED /* calendarHeader@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "calendarHeader@2x.png"; path = "../../calendarHeader@2x.png"; sourceTree = "<group>"; };
+		0036DD45172585420022B3ED /* MCPh2_CalendarLeftArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MCPh2_CalendarLeftArrow.png; path = ../../MCPh2_CalendarLeftArrow.png; sourceTree = "<group>"; };
+		0036DD46172585420022B3ED /* MCPh2_CalendarLeftArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MCPh2_CalendarLeftArrow@2x.png"; path = "../../MCPh2_CalendarLeftArrow@2x.png"; sourceTree = "<group>"; };
+		0036DD47172585420022B3ED /* MCPh2_CalendarRightArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MCPh2_CalendarRightArrow.png; path = ../../MCPh2_CalendarRightArrow.png; sourceTree = "<group>"; };
+		0036DD48172585420022B3ED /* MCPh2_CalendarRightArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MCPh2_CalendarRightArrow@2x.png"; path = "../../MCPh2_CalendarRightArrow@2x.png"; sourceTree = "<group>"; };
 		1D2391395A8710F3E85A4B /* Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D2391395A8710F3E85A54 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1D2391395A8710F3E85A56 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -90,8 +106,16 @@
 		1D2391395A8710F3E85A5A /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				0036DD3D172300E00022B3ED /* MCPh2_DateBox.png */,
+				0036DD3E172300E00022B3ED /* MCPh2_DateBox@2x.png */,
+				0036DD4117230C390022B3ED /* calendarHeader.png */,
+				0036DD4217230C390022B3ED /* calendarHeader@2x.png */,
 				1D2391395A8710F3E85A84 /* CKCalendarView.m */,
 				1D2391395A8710F3E85A83 /* CKCalendarView.h */,
+				0036DD45172585420022B3ED /* MCPh2_CalendarLeftArrow.png */,
+				0036DD46172585420022B3ED /* MCPh2_CalendarLeftArrow@2x.png */,
+				0036DD47172585420022B3ED /* MCPh2_CalendarRightArrow.png */,
+				0036DD48172585420022B3ED /* MCPh2_CalendarRightArrow@2x.png */,
 				1D2391395A8710F3E85A67 /* CKViewController.m */,
 				1D2391395A8710F3E85A66 /* CKViewController.h */,
 				1D2391395A8710F3E85A64 /* CKAppDelegate.m */,
@@ -176,6 +200,14 @@
 				1D2391395A8710F3E85A8A /* left_arrow@2x.png in Resources */,
 				1D2391395A8710F3E85A8C /* right_arrow.png in Resources */,
 				1D2391395A8710F3E85A8E /* right_arrow@2x.png in Resources */,
+				0036DD3F172300E00022B3ED /* MCPh2_DateBox.png in Resources */,
+				0036DD40172300E00022B3ED /* MCPh2_DateBox@2x.png in Resources */,
+				0036DD4317230C390022B3ED /* calendarHeader.png in Resources */,
+				0036DD4417230C390022B3ED /* calendarHeader@2x.png in Resources */,
+				0036DD49172585420022B3ED /* MCPh2_CalendarLeftArrow.png in Resources */,
+				0036DD4A172585420022B3ED /* MCPh2_CalendarLeftArrow@2x.png in Resources */,
+				0036DD4B172585420022B3ED /* MCPh2_CalendarRightArrow.png in Resources */,
+				0036DD4C172585420022B3ED /* MCPh2_CalendarRightArrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +327,7 @@
 				1D2391395A8710F3E85A4F /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

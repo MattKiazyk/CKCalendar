@@ -23,6 +23,9 @@
 @property (nonatomic, strong) UIColor *selectedBackgroundColor;
 @property (nonatomic, strong) UIColor *textColor;
 @property (nonatomic, strong) UIColor *selectedTextColor;
+@property (nonatomic) UIEdgeInsets titleEdgeInsets;
+@property (nonatomic) UIEdgeInsets imageEdgeInsets;
+@property (nonatomic, strong) UIImage *backgroundImage;
 
 @end
 
@@ -49,10 +52,22 @@ typedef enum {
 @property (nonatomic, strong) UIFont *dateOfWeekFont;
 @property (nonatomic, strong) UIColor *dayOfWeekTextColor;
 @property (nonatomic, strong) UIFont *dateFont;
+@property (nonatomic, strong) UIView *headerBackgroundView;
+@property (nonatomic, strong) UIColor *dateBorderColor;
+@property (nonatomic, assign) BOOL showPreviousMonthCellDetail;
+@property(nonatomic, strong) UIButton *prevButton;
+@property(nonatomic, strong) UIButton *nextButton;
+@property(nonatomic, assign) CGFloat buttonMargin;
+
+
 
 - (void)setMonthButtonColor:(UIColor *)color;
 - (void)setInnerBorderColor:(UIColor *)color;
 - (void)setDayOfWeekBottomColor:(UIColor *)bottomColor topColor:(UIColor *)topColor;
+- (void)setDayOfWeekBackgroundView:(UIView *)view;
+- (void)setLeftMonthButtonImage:(UIImage *)image;
+- (void)setRightMonthButtonImage:(UIImage *)image;
+
 
 - (void)selectDate:(NSDate *)date makeVisible:(BOOL)visible;
 - (void)reloadData;
@@ -69,6 +84,7 @@ typedef enum {
 
 @optional
 - (void)calendar:(CKCalendarView *)calendar configureDateItem:(CKDateItem *)dateItem forDate:(NSDate *)date;
+- (UIView *)viewforDate:(NSDate *)date;
 - (BOOL)calendar:(CKCalendarView *)calendar willSelectDate:(NSDate *)date;
 - (void)calendar:(CKCalendarView *)calendar didSelectDate:(NSDate *)date;
 - (BOOL)calendar:(CKCalendarView *)calendar willDeselectDate:(NSDate *)date;
