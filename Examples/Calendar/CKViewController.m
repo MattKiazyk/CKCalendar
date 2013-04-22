@@ -28,6 +28,8 @@
         calendar.dateBorderColor = [UIColor darkGrayColor];
         calendar.buttonMargin = 100;
         calendar.dayOfWeekFont = [UIFont fontWithName:@"Helvetica" size:10];
+        [calendar setTitleFont:[UIFont fontWithName:@"Helvetica" size:10]];
+        calendar.isTitleUpperCase = YES;
         
         [calendar setLeftMonthButtonImage:[UIImage imageNamed:@"MCPh2_CalendarLeftArrow"]];
         [calendar setRightMonthButtonImage:[UIImage imageNamed:@"MCPh2_CalendarRightArrow"]];

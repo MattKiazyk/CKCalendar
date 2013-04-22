@@ -311,6 +311,9 @@
     self.highlight.frame = CGRectMake(1, 1, self.bounds.size.width - 2, 1);
 
     self.titleLabel.text = [self.dateFormatter stringFromDate:_monthShowing];
+    if (self.isTitleUpperCase) {
+        self.titleLabel.text = [self.titleLabel.text uppercaseString];
+    }
     self.titleLabel.frame = CGRectMake(0, 0, self.bounds.size.width, TOP_HEIGHT);
     
     
@@ -490,7 +493,7 @@
     //self.backgroundColor = UIColorFromRGB(0x393B40);
     self.backgroundColor = [UIColor clearColor];
     [self setTitleColor:[UIColor blackColor]];
-    [self setTitleFont:[UIFont boldSystemFontOfSize:17.0]];
+    //[self setTitleFont:[UIFont boldSystemFontOfSize:17.0]];
 
     [self setDayOfWeekFont:[UIFont boldSystemFontOfSize:12.0]];
     [self setDayOfWeekTextColor:UIColorFromRGB(0x999999)];
