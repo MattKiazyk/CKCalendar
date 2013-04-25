@@ -267,6 +267,7 @@
     swipeGesture.direction = UISwipeGestureRecognizerDirectionLeft | UISwipeGestureRecognizerDirectionRight;
     [self addGestureRecognizer:swipeGesture];
     
+    
     [self layoutSubviews]; // TODO: this is a hack to get the first month to show properly
 }
 
@@ -399,7 +400,9 @@
         dateButtonPosition++;
     }
 }
-
+- (NSDate *)currentMonth{
+    return self.monthShowing;
+}
 -(void)handleSwipeFrom:(UISwipeGestureRecognizer *)recognizer {
     if (recognizer.direction == UISwipeGestureRecognizerDirectionLeft) {
         [self _moveCalendarToPreviousMonth];
@@ -673,6 +676,19 @@
     return ([self _compareByMonth:date toDate:self.monthShowing] != NSOrderedSame);
 }
 
+- (NSDate *)startDateForDate:(NSDate *)date{
+    NSDateComponents *comp = [self.calendar components:(NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit) fromDate:date];
+    [comp setDay:1];
+    return [self.calendar dateFromComponents:comp];
+}
+- (NSDate *)endDateForDate:(NSDate *)date {
+    NSDateComponents *comp = [self.calendar components:(NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit) fromDate:date];
+    // set last of month
+    [comp setMonth:[comp month]+1];
+    [comp setDay:0];
+    
+    return [self.calendar dateFromComponents:comp];
+}
 - (NSComparisonResult)_compareByMonth:(NSDate *)date toDate:(NSDate *)otherDate {
     NSDateComponents *day = [self.calendar components:NSYearCalendarUnit|NSMonthCalendarUnit fromDate:date];
     NSDateComponents *day2 = [self.calendar components:NSYearCalendarUnit|NSMonthCalendarUnit fromDate:otherDate];
