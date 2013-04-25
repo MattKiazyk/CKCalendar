@@ -403,6 +403,19 @@
 - (NSDate *)currentMonth{
     return self.monthShowing;
 }
+
+- (BOOL)dateIsOnWeekend:(NSDate *)date {
+    NSRange weekdayRange = [self.calendar maximumRangeOfUnit:NSWeekdayCalendarUnit];
+    NSDateComponents *components = [self.calendar components:NSWeekdayCalendarUnit fromDate:date];
+    NSUInteger weekdayOfDate = [components weekday];
+    
+    if (weekdayOfDate == weekdayRange.location || weekdayOfDate == weekdayRange.length) {
+        //the date falls somewhere on the first or last days of the week
+        return YES;
+    }
+    return NO;
+}
+
 -(void)handleSwipeFrom:(UISwipeGestureRecognizer *)recognizer {
     if (recognizer.direction == UISwipeGestureRecognizerDirectionLeft) {
         [self _moveCalendarToPreviousMonth];

@@ -79,6 +79,7 @@ typedef enum {
 - (NSDate *)startDateForDate:(NSDate *)date;
 - (NSDate *)endDateForDate:(NSDate *)date;
 - (NSDate *)currentMonth;
+- (BOOL)dateIsOnWeekend:(NSDate *)date;
 @end
 
 @protocol CKCalendarDelegate <NSObject>
