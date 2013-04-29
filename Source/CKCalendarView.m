@@ -263,9 +263,13 @@
     [self _setDefaultStyle];
     
     
-    UISwipeGestureRecognizer *swipeGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeFrom:)];
-    swipeGesture.direction = UISwipeGestureRecognizerDirectionLeft | UISwipeGestureRecognizerDirectionRight;
-    [self addGestureRecognizer:swipeGesture];
+    UISwipeGestureRecognizer *swipeLeftGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeFrom:)];
+    swipeLeftGesture.direction = UISwipeGestureRecognizerDirectionLeft;
+    [self addGestureRecognizer:swipeLeftGesture];
+    UISwipeGestureRecognizer *swipeRightGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeFrom:)];
+    swipeRightGesture.direction = UISwipeGestureRecognizerDirectionRight;
+    
+    [self addGestureRecognizer:swipeRightGesture];
     
     
     [self layoutSubviews]; // TODO: this is a hack to get the first month to show properly
