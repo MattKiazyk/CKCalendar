@@ -421,7 +421,7 @@
 }
 
 -(void)handleSwipeFrom:(UISwipeGestureRecognizer *)recognizer {
-    if (recognizer.direction == UISwipeGestureRecognizerDirectionLeft) {
+    if (recognizer.direction == UISwipeGestureRecognizerDirectionRight) {
         [self _moveCalendarToPreviousMonth];
     } else {
         [self _moveCalendarToNextMonth];
