@@ -15,7 +15,7 @@ LICENSETEXT
 }
   s.author       = { "Jason Kozemczak" => "jason.kozemczak@gmail.com" }
   s.source       = { :git => "https://github.com/MattKiazyk/CKCalendar"}
-  s.platform     = :ios, '5.0'
+  s.platform     = :ios, '8.0'
   s.source_files = 'Source'
   s.resources    = 'Source/resources/*'
   s.frameworks = 'UIKit', 'QuartzCore', 'CoreGraphics'
